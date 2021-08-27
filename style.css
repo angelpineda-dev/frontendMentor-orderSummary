@@ -1,4 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+:root {
+  --main-blue: hsl(245, 75%, 52%);
+  --main-dark-blue: hsl(223, 47%, 23%);
+  --main-white-blue: hsl(224, 23%, 55%);
+  --modal-blue: hsl(225, 100%, 94%);
+  --modal-white-blue: hsl(225, 100%, 98%);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 62.5%;
+  font-weight: 500;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--main-dark-blue);
+  font-weight: 900;
+  padding: 0.5em 0;
+}
+
+p {
+  color: var(--main-white-blue);
+  padding: 0.5em;
+  line-height: 1.5em;
+}
+
+strong {
+  color: var(--main-dark-blue);
+}
+
+.card {
+  border-radius: 1em;
+  max-width: 500px;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
