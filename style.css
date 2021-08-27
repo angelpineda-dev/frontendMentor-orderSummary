@@ -23,10 +23,11 @@ html {
 }
 
 body {
+  background-color: var(--modal-blue);
   display: grid;
-  place-items: center;
   font-size: 1.6rem;
   padding: 1rem;
+  place-items: center;
 }
 
 h1 {
@@ -41,16 +42,28 @@ p {
   line-height: 1.5em;
 }
 
+a {
+  font-weight: 700;
+  transition: color 0.3s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-white-blue);
+}
+
 strong {
   color: var(--main-dark-blue);
 }
 
 .card {
+  background-color: #fff;
   border-radius: 1em;
-  max-width: 500px;
-  min-height: 100vh;
-  width: 100%;
+  margin: 2em 0;
+  max-width: 375px;
+  min-height: 80vh;
   text-align: center;
+  width: 100%;
 }
 
 .card img {
@@ -59,8 +72,64 @@ strong {
   border-radius: 1em 1em 0 0;
 }
 
+.promotion {
+  align-items: center;
+  background-color: var(--modal-white-blue);
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em;
+  margin: 1em;
+  width: 90%;
+}
+
+.promotion img {
+  width: 50px;
+  height: 50px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+button {
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  outline: none;
+  padding: 1em;
+  margin: 0.5em auto;
+  width: 100%;
+}
+
+.pay-btn {
+  background-color: var(--main-blue);
+  box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.15);
+  color: var(--modal-white-blue);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pay-btn:hover {
+  background-color: var(--main-white-blue);
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: var(--main-white-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.cancel-btn:hover {
+  color: var(--main-dark-blue);
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
 }
 
